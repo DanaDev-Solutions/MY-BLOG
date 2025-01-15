@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import logo from 'C:/Users/danle/Desktop/my-blog/src/assets/evolv_log.png';
+import logo from "../assets/evolv_log.png"
 
 const Navigation = () => {
   const location = useLocation();
