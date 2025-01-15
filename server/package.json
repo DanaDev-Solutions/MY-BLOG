@@ -1,0 +1,20 @@
+{
+  "name": "medium-blog-server",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "vite",
+    "server": "node server.js",
+    "dev:all": "concurrently \"npm run dev\" \"npm run server\""
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dompurify": "^3.0.6",
+    "express": "^4.18.2",
+    "jsdom": "^22.1.0",
+    "node-cache": "^5.1.2",
+    "node-fetch": "^3.3.2"
+  }
+}
