@@ -1,90 +1,94 @@
-// Import necessary dependencies from React and other libraries
+// src/components/BlogLanding.jsx
 import React from 'react';
-import { Link } from 'react-router-dom';  // For handling navigation between pages
-import { ArrowRight, BookOpen, Users, TrendingUp } from 'lucide-react';  // Icons for UI elements
-import logo from '../assets/evolv_log.png';  // Company logo import
-import MediumFeed from './MediumFeed';  // Custom component for displaying Medium blog posts
+import { Link } from 'react-router-dom';
+import { BookOpen, Users } from 'lucide-react';
+import safetyVideo from '../assets/safety_video.mp4'; // Correct path
+import logo from '../assets/evolv_log.png'; // Correct path
+import MediumFeed from './MediumFeed';
 
 const BlogLanding = () => {
   return (
-    // Main container with full height and dark background
-    <div className="min-h-screen bg-gray-900 text-white">
-      
-      {/* Header Section */}
-      <header className="container mx-auto px-4 pt-16">
-        <div className="max-w-4xl mx-auto text-center">
-          
-          {/* Logo Container */}
-          <div className="mb-8">
-            <img 
-              src={logo}
-              alt="Evolv EHS Solutions Logo" 
-              className="mx-auto w-96 h-96 object-contain rounded-[25%]"
-            />
-          </div>
-          
-          {/* Mission Statement/Quote Banner */}
-          <div className="mt-12 mb-16">
-            {/* Quote text with custom gold color */}
-            <p className="text-2xl font-serif text-[#FFD700] leading-relaxed italic mb-4">
-              "I believe the future of safety and compliance lies in integrating AI and data analytics into a single, all-encompassing platform—delivering predictive insights, streamlined processes, and smarter decision-making in one unified solution."
-            </p>
-            {/* Author attribution with custom mint green color */}
-            <p className="text-xl text-[#00FF9D]">- Dana Higgins</p>
-            <p className="text-xl text-[#00FF9D]/80 italic">Strategic Safety Consultant</p>
-          </div>
-        </div>
-      </header>
+    <div className="relative min-h-screen w-full bg-gray-900 text-white overflow-hidden">
+      {/* Video Background */}
+      <video 
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src={safetyVideo} type="video/mp4" />
+        Your browser does not support video playback.
+      </video>
 
-      {/* Featured Categories Section - Grid of navigation cards */}
-      <section className="container mx-auto px-4 py-12">
-        <div className="grid md:grid-cols-3 gap-8">
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black/50" />
+
+      {/* Logo */}
+      <div className="relative z-10 p-8">
+        <img 
+          src={logo} 
+          alt="Evolv Logo"
+          className="w-32 h-32 rounded-full border-4 border-[#D4AF37]/30 shadow-xl"
+        />
+      </div>
+
+      {/* Content Sections */}
+      <div className="relative z-10 container mx-auto px-4 py-16">
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {/* Industry Trends Card */}
-          <Link 
-            to="/industry-trends" 
-            className="group bg-gray-800/50 p-6 rounded-lg hover:bg-gray-700 transition-all duration-300 hover:shadow-[0_0_15px_rgba(0,255,157,0.3)]"
+          <Link
+            to="/industry-trends"
+            className="group bg-gray-800/70 backdrop-blur-lg p-6 rounded-xl hover:bg-gray-700/90 transition-all"
           >
-            <BookOpen className="w-12 h-12 text-[#00FF9D] mb-4" />
-            <h3 className="text-xl font-semibold mb-2 text-[#00FF9D]">
+            <BookOpen className="w-12 h-12 text-[#00FF9D] mx-auto mb-4" />
+            <h3 className="text-xl font-bold text-center mb-2 text-[#00FF9D]">
               Industry Trends
             </h3>
-            <p className="text-gray-400">Latest developments and innovations in EHS management</p>
+            <p className="text-gray-200 text-center">
+              Latest developments in EHS management
+            </p>
           </Link>
 
           {/* Best Practices Card */}
-          <Link 
-            to="/best-practices" 
-            className="group bg-gray-800/50 p-6 rounded-lg hover:bg-gray-700 transition-all duration-300 hover:shadow-[0_0_15px_rgba(0,255,157,0.3)]"
+          <Link
+            to="/best-practices"
+            className="group bg-gray-800/70 backdrop-blur-lg p-6 rounded-xl hover:bg-gray-700/90 transition-all"
           >
-            <BookOpen className="w-12 h-12 text-[#00FF9D] mb-4" />
-            <h3 className="text-xl font-semibold mb-2 text-[#00FF9D]">
+            <BookOpen className="w-12 h-12 text-[#00FF9D] mx-auto mb-4" />
+            <h3 className="text-xl font-bold text-center mb-2 text-[#00FF9D]">
               Best Practices
             </h3>
-            <p className="text-gray-400">Expert guidelines and implementation strategies</p>
+            <p className="text-gray-200 text-center">
+              Expert implementation strategies
+            </p>
           </Link>
 
           {/* Case Studies Card */}
-          <Link 
-            to="/case-studies" 
-            className="group bg-gray-800/50 p-6 rounded-lg hover:bg-gray-700 transition-all duration-300 hover:shadow-[0_0_15px_rgba(0,255,157,0.3)]"
+          <Link
+            to="/case-studies"
+            className="group bg-gray-800/70 backdrop-blur-lg p-6 rounded-xl hover:bg-gray-700/90 transition-all"
           >
-            <Users className="w-12 h-12 text-[#00FF9D] mb-4" />
-            <h3 className="text-xl font-semibold mb-2 text-[#00FF9D]">
+            <Users className="w-12 h-12 text-[#00FF9D] mx-auto mb-4" />
+            <h3 className="text-xl font-bold text-center mb-2 text-[#00FF9D]">
               Case Studies
             </h3>
-            <p className="text-gray-400">Real-world success stories and lessons learned</p>
+            <p className="text-gray-200 text-center">
+              Real-world success stories
+            </p>
           </Link>
         </div>
-      </section>
 
-      {/* Articles Feed Section */}
-      <section className="container mx-auto px-4 py-12">
-        <h2 className="text-3xl font-bold mb-8 text-evolv-cyan">Latest Articles</h2>
-        {/* MediumFeed component displays blog posts from Medium */}
-        <MediumFeed />
-      </section>
+        {/* Articles Section */}
+        <section className="mt-16">
+          <h2 className="text-3xl font-bold mb-8 text-center text-[#00FF9D]">
+            Latest Articles
+          </h2>
+          <MediumFeed />
+        </section>
+      </div>
     </div>
   );
 };
 
-export default BlogLanding;
+export default BlogLanding; // Proper default export

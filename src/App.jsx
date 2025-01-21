@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import BlogLanding from "./components/BlogLanding.jsx";
+// src/App.jsx
+import BlogLanding from './components/BlogLanding'; // No .jsx extension needed
 import IndustryTrends from "./components/IndustryTrends.jsx";
 import BestPractices from "./components/BestPractices.jsx";
 import CaseStudies from "./components/CaseStudies.jsx";
