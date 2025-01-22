@@ -21,3 +21,15 @@ html, body, #root {
   @apply hover:bg-gray-700/50 transition-all duration-300;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
+.animate-float {
+  animation: float 8s ease-in-out infinite;
+}
+
+.group-hover\:rotate-12:hover {
+  transform: rotate(12deg);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
