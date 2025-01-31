@@ -71,13 +71,14 @@ const BlogLanding = () => {
       <div className="relative z-20">
         {/* Hero Section */}
         <div className="text-center pt-[12vh] px-4 md:pt-[15vh]">
-         <div className="mb-[8vh] animate-float flex justify-center">
+       <div className="mb-[8vh] animate-float flex justify-center">
   <img 
     src={logo} 
     alt="Evolv Safety Solutions" 
-    className="w-[clamp(250px,15vw,400px)] h-auto rounded-full border-[3px] border-evolv-green/30 shadow-2xl hover:shadow-[0_0_40px_rgba(0,255,157,0.2)] transition-all duration-300"
+    className="w-[clamp(300px,20vw,500px)] h-auto rounded-full border-[4px] border-evolv-green/40 shadow-2xl hover:shadow-[0_0_50px_rgba(0,255,157,0.3)] transition-all duration-300"
   />
 </div>
+
 
           
           <div className="max-w-4xl mx-auto space-y-6">
