@@ -127,6 +127,55 @@ const BlogLanding = () => {
 
       {/* Styles */}
       <style>
+<style>
+  {`
+    /* Responsive Typography */
+    h1, h2 {
+      font-size: clamp(2rem, 4vw, 5rem); /* Dynamically scales */
+    }
+
+    p {
+      font-size: clamp(1rem, 2.5vw, 2rem); /* Responsive paragraphs */
+      line-height: 1.6;
+    }
+
+    img {
+      width: clamp(150px, 25vw, 400px); /* Responsive image sizing */
+      height: auto;
+    }
+
+    /* Ensure text elements scale with screen */
+    @media (max-width: 640px) { /* Small screens */
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.8rem; }
+      p { font-size: 1rem; }
+      img { width: 150px; }
+    }
+
+    @media (min-width: 768px) { /* Medium screens */
+      h1 { font-size: 3rem; }
+      h2 { font-size: 2.5rem; }
+      p { font-size: 1.25rem; }
+      img { width: 250px; }
+    }
+
+    @media (min-width: 1024px) { /* Large screens */
+      h1 { font-size: 4rem; }
+      h2 { font-size: 3rem; }
+      p { font-size: 1.5rem; }
+      img { width: 300px; }
+    }
+
+    @media (min-width: 1280px) { /* Extra large screens */
+      h1 { font-size: 5rem; }
+      h2 { font-size: 4rem; }
+      p { font-size: 2rem; }
+      img { width: 400px; }
+    }
+  `}
+</style>
+
+        
         {`
           @keyframes neonGlow {
             0% { text-shadow: 0 0 3px rgba(0, 255, 255, 0.5); }
