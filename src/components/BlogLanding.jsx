@@ -113,9 +113,10 @@ const BlogLanding = () => {
 
             {/* Orb Section */}
             <div className="relative flex justify-center mt-16">
-              <p className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-evolv-green via-evolv-red to-evolv-red bg-clip-text text-transparent animate-gradient py-5">
-                Evolving Soon...
-              </p>
+             <p className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-evolv-red font-orbitron tracking-wide relative parallax-hover straight-gradient">
+  Evolving Soon...
+</p>
+
             </div>
           </div>
         </div>
