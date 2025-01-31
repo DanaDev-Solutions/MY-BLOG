@@ -112,12 +112,12 @@ const BlogLanding = () => {
             </p>
 
             {/* Orb Section */}
-            <div className="relative flex justify-center mt-16">
-             <p className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-evolv-red font-orbitron tracking-wide relative parallax-hover straight-gradient">
-  Evolving Soon...
-</p>
-
-            </div>
+            {/* Orb Section */}
+<div className="relative flex justify-center mt-16">
+  <p className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold font-orbitron tracking-wide relative parallax-hover straight-gradient">
+    Evolving Soon...
+  </p>
+</div>
           </div>
         </div>
       </div>
@@ -207,11 +207,15 @@ const BlogLanding = () => {
             animation: gradient-shift 5s ease infinite;
           }
 
-          .straight-gradient {
-            background: linear-gradient(to right, #00FF9D, #00F2FF, #FF1E00);
-            background-size: 200% 200%;
-            animation: gradient-shift 5s ease infinite;
-          }
+         .straight-gradient {
+  background: linear-gradient(to right, #00FF9D, #00F2FF, #FF1E00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-size: 200% 200%;
+  animation: gradient-shift 5s ease infinite;
+}
         `}
       </style>
     </div>
