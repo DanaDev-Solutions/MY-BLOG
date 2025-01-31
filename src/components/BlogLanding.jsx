@@ -71,16 +71,14 @@ const BlogLanding = () => {
       <div className="relative z-20">
         {/* Hero Section */}
         <div className="text-center pt-[12vh] px-4 md:pt-[15vh]">
-       <div className="mb-[8vh] animate-float flex justify-center">
+        <div className="mb-[8vh] animate-float flex justify-center">
   <img 
     src={logo} 
     alt="Evolv Safety Solutions" 
-    className="w-[clamp(300px,20vw,500px)] h-auto rounded-full border-[4px] border-evolv-green/40 shadow-2xl hover:shadow-[0_0_50px_rgba(0,255,157,0.3)] transition-all duration-300"
+    className="w-[clamp(250px,15vw,400px)] h-auto rounded-full border-[3px] border-evolv-green/30 shadow-2xl hover:shadow-[0_0_40px_rgba(0,255,157,0.2)] transition-all duration-300"
   />
 </div>
 
-
-          
           <div className="max-w-4xl mx-auto space-y-6">
             <h1 className="text-[clamp(2.5rem,8vw,6rem)] font-bold bg-gradient-to-r from-evolv-green via-evolv-blue to-evolv-red bg-clip-text text-transparent leading-tight font-orbitron py-2">
               Next-Gen Safety Intelligence
@@ -106,11 +104,12 @@ const BlogLanding = () => {
             <h2 className="text-[clamp(2rem,6vw,4rem)] font-semi-bold bg-gradient-to-r from-evolv-green via-blue-500 to-evolv-green bg-clip-text text-transparent animate-gradient">
               A New Era for Data-Driven Safety.
             </h2>
- <div className="text-[clamp(1.1rem,2.5vw,1.75rem)] text-gray-300 font-rajdhani max-w-4xl mx-auto text-center md:text-left px-6 md:px-12 leading-relaxed">
+ <div className="text-[clamp(1.1rem,2.5vw,1.75rem)] text-gray-300 font-rajdhani max-w-4xl mx-auto text-center md:text-left px-6 md:px-12 leading-relaxed py-1
+ ">
   <p>
     Powering <strong>workplace safety</strong> with <strong>data analytics</strong> & <strong>automation</strong>.
   </p>
-  <p className="block text-center w-full mt-2 text-evolv-gold italic font-bold py-6">
+  <p className="block text-center w-full mt-2 text-evolv-gold italic font-bold py-6 ">
     Are you ready to experience the future?
   </p>
 </div>
@@ -120,8 +119,8 @@ const BlogLanding = () => {
 
             {/* Orb Section */}
             <div className="relative flex justify-center mt-[8vh]">
-              <p className="text-[clamp(2rem,8vw,5rem)] font-bold font-orbitron tracking-wide relative parallax-hover straight-gradient">
-                Evolving Soon...
+              <p className="text-[clamp(2rem,8vw,5rem)] font-medium font-orbitron tracking-wide relative parallax-hover straight-gradient">
+                Coming Soon...
               </p>
             </div>
           </div>
