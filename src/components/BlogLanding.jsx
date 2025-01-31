@@ -84,7 +84,7 @@ const BlogLanding = () => {
               Next-Gen Safety Intelligence
             </h1>
 
-            <p className="text-[clamp(1.25rem,3vw,2rem)] font-light mb-[6vh] px-4 text-evolv-gold font-rajdhani">
+            <p className="text-[clamp(1.25rem,3vw,2rem)] font-light mb-[6vh] px-4 text-gray-300 font-rajdhani">
               AI-powered insights for modern workplace safety management
             </p>
           </div>
@@ -97,7 +97,7 @@ const BlogLanding = () => {
               Prevent. Predict. Protect.
             </h2>
 
-            <p className="text-[clamp(1.1rem,2.5vw,1.75rem)] leading-relaxed text-evolv-gold font-rajdhani">
+            <p className="text-[clamp(1.1rem,2.5vw,1.75rem)] leading-relaxed text-gray-300 font-rajdhani">
               A revolutionary AI-powered platform for <strong>incident mitigation & investigation</strong> is on its way.
             </p>
             
@@ -105,7 +105,7 @@ const BlogLanding = () => {
               A New Era for Data-Driven Safety.
             </h2>
             
-            <p className="text-[clamp(1.1rem,2.5vw,1.75rem)] text-evolv-gold font-rajdhani md:px-[10vw] text-left max-w-3xl mx-auto">
+            <p className="text-[clamp(1.1rem,2.5vw,1.75rem)] text-gray-300 font-rajdhani md:px-[10vw] text-left max-w-3xl mx-auto">
   Harnessing the power of <strong>data analytics & automation</strong> to transform workplace safety.<br />
   <span className="block mt-4">Are you ready to experience the future?</span>
 </p>
