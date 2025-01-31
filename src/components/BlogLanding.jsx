@@ -110,7 +110,7 @@ const BlogLanding = () => {
   <p>
     Powering <strong>workplace safety</strong> with <strong>data analytics</strong> & <strong>automation</strong>.
   </p>
-  <p className="block text-center w-full mt-2 text-evolv-gold italic font-bold">
+  <p className="block text-center w-full mt-2 text-evolv-gold italic font-bold py-6">
     Are you ready to experience the future?
   </p>
 </div>
