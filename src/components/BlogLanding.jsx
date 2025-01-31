@@ -81,7 +81,7 @@ const BlogLanding = () => {
           </div>
           
           <div className="max-w-4xl mx-auto space-y-6">
-          <h1 className="text-6xl md:text-6xl font-bold bg-gradient-to-r from-evolv-green via-evolv-blue to-evolv-red bg-clip-text text-transparent leading-tight font-orbitron py-2">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl  font-bold bg-gradient-to-r from-evolv-green via-evolv-blue to-evolv-red bg-clip-text text-transparent leading-tight font-orbitron py-2">
   Next-Gen Safety Intelligence
 </h1>
 
