@@ -105,10 +105,14 @@ const BlogLanding = () => {
               A New Era for Data-Driven Safety.
             </h2>
             
-            <p className="text-[clamp(1.1rem,2.5vw,1.75rem)] text-gray-300 font-rajdhani md:px-[10vw] text-left max-w-3xl mx-auto">
-  Harnessing the power of <strong>data analytics & automation</strong> to transform workplace safety.<br />
-  <span className="block mt-4">Are you ready to experience the future?</span>
+           <p className="text-[clamp(1.1rem,2.5vw,1.75rem)] text-gray-300 font-rajdhani max-w-4xl mx-auto text-center md:text-left px-6 md:px-12 leading-relaxed">
+  Harnessing the power of <strong>data analytics & automation</strong> to transform workplace safety.
+  <br />
+  <span className="block mt-4">
+    Are you ready to experience the future?
+  </span>
 </p>
+
 
             {/* Orb Section */}
             <div className="relative flex justify-center mt-[8vh]">
