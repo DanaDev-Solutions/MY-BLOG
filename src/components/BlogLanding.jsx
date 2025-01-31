@@ -104,15 +104,15 @@ const BlogLanding = () => {
             <h2 className="text-[clamp(2rem,6vw,4rem)] font-semi-bold bg-gradient-to-r from-evolv-green via-blue-500 to-evolv-green bg-clip-text text-transparent animate-gradient">
               A New Era for Data-Driven Safety.
             </h2>
-            
-  <div className="text-[clamp(1.1rem,2.5vw,1.75rem)] text-gray-300 font-rajdhani max-w-4xl mx-auto text-center md:text-left px-6 md:px-12 leading-relaxed">
+ <div className="text-[clamp(1.1rem,2.5vw,1.75rem)] text-gray-300 font-rajdhani max-w-4xl mx-auto text-center md:text-left px-6 md:px-12 leading-relaxed">
   <p>
     Powering <strong>workplace safety</strong> with <strong>data analytics</strong> & <strong>automation</strong>.
   </p>
-  <p className="block text-center w-full mt-2 text-evolv-gold italic">
+  <p className="block text-center w-full mt-2 text-evolv-gold italic font-bold">
     Are you ready to experience the future?
   </p>
 </div>
+
 
 
 
