@@ -120,7 +120,7 @@ const BlogLanding = () => {
             {/* Orb Section */}
             <div className="relative flex justify-center mt-[8vh]">
               <p className="text-[clamp(2rem,8vw,5rem)] font-medium font-orbitron tracking-wide relative parallax-hover straight-gradient">
-                Coming Soon...
+                Stay Tuned...
               </p>
             </div>
           </div>
