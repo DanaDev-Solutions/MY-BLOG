@@ -120,12 +120,29 @@ const BlogLanding = () => {
             {/* Orb Section */}
             <div className="relative flex justify-center mt-[8vh]">
               <p className="text-[clamp(2rem,8vw,5rem)] font-medium font-orbitron tracking-wide relative parallax-hover straight-gradient">
-                Stay Tuned...
+                Coming Soon...
               </p>
             </div>
           </div>
         </div>
+        <div className="text-center mt-10">
+  {/* Get in Touch Heading & Description (Same Size) */}
+  <p className="text-[clamp(0.9rem,2vw,1.25rem)] text-gray-400 font-rajdhani">
+    <strong>Get in Touch</strong> — Have questions or want to collaborate? Reach out to us!
+  </p>
+
+  {/* Contact Us Button with Envelope Icon */}
+  <a 
+    href="mailto:connect@evolvehs.co" 
+    className="inline-flex items-center justify-center mt-4 px-6 py-3 text-lg font-bold text-white bg-evolv-green rounded-lg shadow-md hover:bg-evolv-green/80 transition-all duration-300"
+  >
+    📩 Contact Us
+  </a>
+</div>
+
+
       </div>
+      
 
       {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-gray-900/70 via-transparent to-gray-900/90 z-10" />
